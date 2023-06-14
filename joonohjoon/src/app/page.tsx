@@ -1,7 +1,7 @@
-import HomePage from "@/pages/HomePage";
+import Intro from "@/pages/Intro";
 
 const App = () => {
-  return <HomePage />;
+  return <Intro />;
 };
 
 export default App;

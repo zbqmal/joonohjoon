@@ -1,12 +1,15 @@
 import { Tab, Tabs } from "@mui/material";
-import React from "react";
+import { useRouter } from "next/navigation";
 
 const MenuTabs = () => {
+  const router = useRouter();
+
   return (
     <Tabs orientation="vertical">
-      <Tab label="tab1" />
-      <Tab label="tab2" />
-      <Tab label="tab3" />
+      <Tab label="Intro " onClick={() => router.push("/Intro")} />
+      <Tab label="Coding" onClick={() => router.push("/Coding")} />
+      <Tab label="Astronomy" onClick={() => router.push("/Astronomy")} />
+      <Tab label="Football" onClick={() => router.push("/Football")} />
     </Tabs>
   );
 };
